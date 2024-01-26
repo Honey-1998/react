@@ -1,0 +1,19 @@
+// Returning a Function from a Function:
+// To return a function from another function, you simply define and return a function within the outer function. Here's a basic example:
+// 
+
+function outerFunction() {
+  // Define a function inside the outer function
+  function innerFunction() {
+    console.log("Inside inner function");
+  }
+
+  // Return the inner function
+  return innerFunction;
+}
+
+// Call outer function to get the inner function
+const returnedFunction = outerFunction();
+
+// Now you can call the returned function
+returnedFunction(); // Output: Inside inner function
